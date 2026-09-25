@@ -1,0 +1,107 @@
+no-permission:
+  - "[message] &#FB8808▶ &fНедостаточно &#FB8808прав &fна выполнение команды!"
+  - "[sound] BLOCK_ANVIL_LAND"
+
+player-only:
+  - "[message] &#FB8808▶ &fДанная команда доступна &#FB8808только игрокам&f!"
+  - "[sound] BLOCK_NOTE_BLOCK_BASS"
+
+reloaded:
+  - "[message] &#FFFF00◆ &fКонфигурация плагина &#FFFF00успешно перезагружена&f!"
+  - "[sound] ENTITY_PLAYER_LEVELUP"
+
+usage:
+  - "[message] "
+  - "[message] &#FFFF00▶ &fКоманды магазина &#FFFF00GlowLiteShop&f:"
+  - "[message] "
+  - "[message]   &#FFFF00◆ &f/shop &8— &fоткрыть магазин товаров"
+  - "[message]   &#FFFF00◆ &f/shop chest &8— &fоткрыть хранилище покупок"
+  - "[message]   &#FFFF00◆ &f/shop bid <слот> <сумма> &8— &fсделать ставку на аукционе"
+  - "[message]   &#FFFF00◆ &f/shop earlywipe &8— &fпереключить режим раннего вайпа"
+  - "[message]   &#FFFF00◆ &f/shop forcerotate &8— &fпринудительно обновить ассортимент"
+  - "[message]   &#FFFF00◆ &f/shop reload &8— &fперезагрузить конфигурацию"
+  - "[message] "
+
+buy-success:
+  - "[message] &#FFFF00◆ &fВы успешно приобрели &#FFFF00{item}&f за &#FFFF00{price} {currency}&f!"
+  - "[message] &#FFFF00◆ &fПредмет отправлен в ваше хранилище &#FFFF00/shop chest&f."
+  - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+  - "[actionbar] &#FFFF00◆ &fКуплено: &#FFFF00{item}"
+
+not-enough-funds:
+  - "[message] &#FB8808▶ &fНедостаточно средств! Требуется: &#FB8808{price} {currency}&f."
+  - "[sound] BLOCK_NOTE_BLOCK_BASS"
+  - "[actionbar] &#FB8808▶ &fНедостаточно &#FB8808{currency}"
+
+bid-success:
+  - "[message] &#FFFF00◆ &fВы успешно сделали ставку &#FFFF00{amount} {currency}&f на &#FFFF00{item}&f!"
+  - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+  - "[actionbar] &#FFFF00◆ &fСтавка принята: &#FFFF00{amount} {currency}"
+
+bid-too-low:
+  - "[message] &#FB8808▶ &fСтавка слишком мала! Минимальная ставка: &#FB8808{min_bid} {currency}&f."
+  - "[sound] BLOCK_NOTE_BLOCK_BASS"
+
+bid-outbid:
+  - "[message] &#FB8808▶ &fВаша ставка на &#FB8808{item}&f была перебита игроком &#FFFF00{player}&f!"
+  - "[message] &#FFFF00◆ &fСредства в размере &#FFFF00{amount} {currency}&f возвращены на ваш баланс."
+  - "[sound] ENTITY_ITEM_BREAK"
+
+auction-won:
+  - "[message] &#FFFF00◆ &fПоздравляем! Вы выиграли аукцион за &#FFFF00{item}&f со ставкой &#FFFF00{amount} {currency}&f!"
+  - "[message] &#FFFF00◆ &fПредмет ожидает вас в хранилище &#FFFF00/shop chest&f."
+  - "[sound] UI_TOAST_CHALLENGE_COMPLETE"
+
+item-claimed:
+  - "[message] &#FFFF00◆ &fВы забрали &#FFFF00{item}&f из хранилища!"
+  - "[sound] ENTITY_ITEM_PICKUP"
+
+all-items-claimed:
+  - "[message] &#FFFF00◆ &fВсе доступные предметы (&#FFFF00{count} шт.&f) перемещены в инвентарь!"
+  - "[sound] ENTITY_PLAYER_LEVELUP"
+
+chest-empty:
+  - "[message] &#FB8808▶ &fВаше хранилище покупок пусто!"
+  - "[sound] BLOCK_CHEST_LOCKED"
+
+inventory-full:
+  - "[message] &#FB8808▶ &fВ вашем инвентаре недостаточно свободного места!"
+  - "[sound] BLOCK_CHEST_LOCKED"
+
+force-rotated:
+  - "[message] &#FFFF00◆ &fАссортимент магазина &#FFFF00успешно обновлён&f!"
+  - "[sound] BLOCK_BEACON_POWER_SELECT"
+
+early-wipe-enabled:
+  - "[message] &#FFFF00◆ &fРежим раннего вайпа &#FFFF00включён&f! Время обновления сокращено."
+  - "[sound] BLOCK_BEACON_ACTIVATE"
+
+early-wipe-disabled:
+  - "[message] &#FB8808▶ &fРежим раннего вайпа &#FB8808выключен&f! Время обновления стандартное."
+  - "[sound] BLOCK_BEACON_DEACTIVATE"
+
+shop-opened:
+  - "[sound] BLOCK_CHEST_OPEN"
+
+chest-opened:
+  - "[sound] BLOCK_ENDER_CHEST_OPEN"
+
+invalid-slot:
+  - "[message] &#FB8808▶ &fУказан неверный номер слота!"
+  - "[sound] BLOCK_NOTE_BLOCK_BASS"
+
+invalid-amount:
+  - "[message] &#FB8808▶ &fУкажите корректную сумму для ставки!"
+  - "[sound] BLOCK_NOTE_BLOCK_BASS"
+
+item-not-auction:
+  - "[message] &#FB8808▶ &fДанный предмет не продаётся через аукцион!"
+  - "[sound] BLOCK_NOTE_BLOCK_BASS"
+
+item-already-sold:
+  - "[message] &#FB8808▶ &fЭтот предмет уже выкуплен или снят с продажи!"
+  - "[sound] BLOCK_NOTE_BLOCK_BASS"
+
+cannot-outbid-self:
+  - "[message] &#FB8808▶ &fВаша ставка уже является наивысшей!"
+  - "[sound] BLOCK_NOTE_BLOCK_BASS"

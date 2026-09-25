@@ -1,0 +1,15 @@
+name: GlowLiteShop
+version: 1.0.0
+main: pluginsfix.glowliteshop.GlowLiteShop
+api-version: '1.21'
+author: pluginsfix
+softdepend:
+  - Vault
+  - PlayerPoints
+  - PlaceholderAPI
+commands:
+  shop:
+    description: Main shop command
+    permission: glowliteshop.use
+    aliases:
+      - liteshop

@@ -1,0 +1,285 @@
+config-version: 1
+
+currencies:
+  coins:
+    name: "Монеты"
+    symbol: "⛃"
+    type: "vault"
+  sapphires:
+    name: "Сапфиры"
+    symbol: "✦"
+    type: "internal"
+
+rotation:
+  interval-minutes: 120
+  early-wipe: false
+  early-wipe-interval-minutes: 30
+  active-slots:
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+
+gui:
+  title: "&#FFFF00◆ &fМагазин &8| &#FFFF00HolyLite"
+  size: 54
+  filler:
+    material: "BLACK_STAINED_GLASS_PANE"
+    name: " "
+  navigation:
+    kits:
+      slot: 47
+      material: "NETHERITE_SWORD"
+      name: "&#FFFF00▶ &fМагазин китов"
+      lore:
+        - "&fНажмите, чтобы перейти"
+        - "&fв раздел наборов снаряжения."
+        - ""
+        - "&#FFFF00◆ &fНажмите для перехода"
+      command: "kits"
+    boosters:
+      slot: 49
+      material: "BEACON"
+      name: "&#FFFF00▶ &fМагазин бустеров"
+      lore:
+        - "&fНажмите, чтобы перейти"
+        - "&fв раздел временных усилителей."
+        - ""
+        - "&#FFFF00◆ &fНажмите для перехода"
+      command: "boosters"
+    chest:
+      slot: 51
+      material: "ENDER_CHEST"
+      name: "&#FFFF00▶ &fХранилище покупок"
+      lore:
+        - "&fВсе купленные и выигранные"
+        - "&fпредметы попадают сюда."
+        - ""
+        - "&#FFFF00◆ &fВ хранилище: &#FFFF00{count} &fпредм."
+        - "&#FFFF00◆ &fНажмите для открытия"
+    rotation-indicator:
+      slot: 4
+      material: "CLOCK"
+      name: "&#FFFF00▶ &fОбновление ассортимента"
+      lore:
+        - "&fДо смены товаров осталось: &#FFFF00{time}"
+        - "&fРежим раннего вайпа: {early_wipe_status}"
+        - ""
+        - "&#FFFF00◆ &fТовары обновляются автоматически"
+
+chest-gui:
+  title: "&#FFFF00◆ &fХранилище покупок"
+  size: 54
+  filler:
+    material: "BLACK_STAINED_GLASS_PANE"
+    name: " "
+  claim-all:
+    slot: 49
+    material: "HOPPER"
+    name: "&#FFFF00▶ &fЗабрать все предметы"
+    lore:
+      - "&fПереместить все доступные"
+      - "&fпредметы в ваш инвентарь."
+      - ""
+      - "&#FFFF00◆ &fНажмите для получения"
+  back:
+    slot: 45
+    material: "ARROW"
+    name: "&#FB8808▶ &fНазад в магазин"
+    lore:
+      - "&fВернуться в главное меню магазина."
+
+products:
+  totem_of_undying:
+    material: "TOTEM_OF_UNDYING"
+    amount: 1
+    name: "&#FFFF00◆ &fТотем бессмертия"
+    lore:
+      - "&fЛегендарный артефакт, спасающий"
+      - "&fвладельца от неминуемой гибели."
+    purchase-mode: "BOTH"
+    currency: "coins"
+    direct-price: 15000.0
+    auction-min-bid: 5000.0
+    auction-bid-step: 1000.0
+    custom-model-data: 0
+    enchanted: true
+
+  god_apple:
+    material: "ENCHANTED_GOLDEN_APPLE"
+    amount: 3
+    name: "&#FFFF00◆ &fЗачарованное яблоко"
+    lore:
+      - "&fДарует мощную регенерацию,"
+      - "&fпоглощение и огнестойкость."
+    purchase-mode: "DIRECT"
+    currency: "sapphires"
+    direct-price: 45.0
+    auction-min-bid: 0.0
+    auction-bid-step: 0.0
+    custom-model-data: 0
+    enchanted: true
+
+  netherite_chestplate:
+    material: "NETHERITE_CHESTPLATE"
+    amount: 1
+    name: "&#FFFF00◆ &fНагрудник титана"
+    lore:
+      - "&fКованая незеритовая броня"
+      - "&fс защитой от сокрушительных атак."
+    purchase-mode: "AUCTION"
+    currency: "coins"
+    direct-price: 0.0
+    auction-min-bid: 25000.0
+    auction-bid-step: 2500.0
+    custom-model-data: 0
+    enchantments:
+      PROTECTION: 4
+      UNBREAKING: 3
+      MENDING: 1
+
+  elytra_wings:
+    material: "ELYTRA"
+    amount: 1
+    name: "&#FFFF00◆ &fКрылья небес"
+    lore:
+      - "&fПозволяют парить в небесах"
+      - "&fна огромной скорости."
+    purchase-mode: "BOTH"
+    currency: "sapphires"
+    direct-price: 120.0
+    auction-min-bid: 40.0
+    auction-bid-step: 5.0
+    custom-model-data: 0
+    enchantments:
+      UNBREAKING: 3
+      MENDING: 1
+
+  exp_bottles:
+    material: "EXPERIENCE_BOTTLE"
+    amount: 64
+    name: "&#FFFF00◆ &fКомплект пузырьков опыта"
+    lore:
+      - "&fБыстрый способ восстановить"
+      - "&fснаряжение с починкой."
+    purchase-mode: "DIRECT"
+    currency: "coins"
+    direct-price: 8000.0
+    auction-min-bid: 0.0
+    auction-bid-step: 0.0
+    custom-model-data: 0
+
+  netherite_sword:
+    material: "NETHERITE_SWORD"
+    amount: 1
+    name: "&#FFFF00◆ &fМеч павшего паладина"
+    lore:
+      - "&fОружие древнего воина,"
+      - "&fне знающее пощады."
+    purchase-mode: "AUCTION"
+    currency: "sapphires"
+    direct-price: 0.0
+    auction-min-bid: 50.0
+    auction-bid-step: 10.0
+    custom-model-data: 0
+    enchantments:
+      SHARPNESS: 5
+      FIRE_ASPECT: 2
+      LOOTING: 3
+      UNBREAKING: 3
+      MENDING: 1
+
+  shulker_box:
+    material: "PURPLE_SHULKER_BOX"
+    amount: 1
+    name: "&#FFFF00◆ &fКомпактный шалкер"
+    lore:
+      - "&fИдеальное портативное"
+      - "&fхранилище для ценных ресурсов."
+    purchase-mode: "DIRECT"
+    currency: "coins"
+    direct-price: 12000.0
+    auction-min-bid: 0.0
+    auction-bid-step: 0.0
+    custom-model-data: 0
+
+  trident_storm:
+    material: "TRIDENT"
+    amount: 1
+    name: "&#FFFF00◆ &fТрезубец шторма"
+    lore:
+      - "&fПризывает молнию в грозу"
+      - "&fи рассекает водную гладь."
+    purchase-mode: "BOTH"
+    currency: "coins"
+    direct-price: 35000.0
+    auction-min-bid: 10000.0
+    auction-bid-step: 2000.0
+    custom-model-data: 0
+    enchantments:
+      IMPALING: 5
+      LOYALTY: 3
+      UNBREAKING: 3
+      MENDING: 1
+
+  end_crystal_pack:
+    material: "END_CRYSTAL"
+    amount: 16
+    name: "&#FFFF00◆ &fНабор кристаллов Края"
+    lore:
+      - "&fРазрушительные кристаллы"
+      - "&fдля тактических PvP сражений."
+    purchase-mode: "DIRECT"
+    currency: "coins"
+    direct-price: 18000.0
+    auction-min-bid: 0.0
+    auction-bid-step: 0.0
+    custom-model-data: 0
+
+  ancient_debris:
+    material: "ANCIENT_DEBRIS"
+    amount: 8
+    name: "&#FFFF00◆ &fДревние обломки"
+    lore:
+      - "&fРедчайшая порода из глубин"
+      - "&fНижнего мира для выплавки незерита."
+    purchase-mode: "AUCTION"
+    currency: "coins"
+    direct-price: 0.0
+    auction-min-bid: 15000.0
+    auction-bid-step: 1500.0
+    custom-model-data: 0
+
+  golden_apple_stack:
+    material: "GOLDEN_APPLE"
+    amount: 16
+    name: "&#FFFF00◆ &fЗолотые яблоки"
+    lore:
+      - "&fОтличный запас провизии"
+      - "&fдля затяжного боя."
+    purchase-mode: "DIRECT"
+    currency: "coins"
+    direct-price: 6000.0
+    auction-min-bid: 0.0
+    auction-bid-step: 0.0
+    custom-model-data: 0
+
+  obsidian_stack:
+    material: "OBSIDIAN"
+    amount: 64
+    name: "&#FFFF00◆ &fБлок обсидиана"
+    lore:
+      - "&fПрочнейший строительный"
+      - "&fматериал для укреплений."
+    purchase-mode: "DIRECT"
+    currency: "coins"
+    direct-price: 4000.0
+    auction-min-bid: 0.0
+    auction-bid-step: 0.0
+    custom-model-data: 0
