@@ -1,5 +1,5 @@
 name: GlowLiteShop
-version: 1.0.0
+version: 1.0.1
 main: pluginsfix.glowliteshop.GlowLiteShop
 api-version: '1.21'
 author: pluginsfix
